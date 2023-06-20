@@ -15,7 +15,7 @@
 
 /**
 
-This file should work with falcon7b models. It dependso on the updated main.cpp from the apage43 fork of ggml.
+This file should work with falcon7b models. It uses the falcon model from the apage43 fork of ggml.
 
 */
 

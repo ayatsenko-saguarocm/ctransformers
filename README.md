@@ -1,8 +1,8 @@
 # [C Transformers](https://github.com/marella/ctransformers) [![PyPI](https://img.shields.io/pypi/v/ctransformers)](https://pypi.org/project/ctransformers/) [![tests](https://github.com/marella/ctransformers/actions/workflows/tests.yml/badge.svg)](https://github.com/marella/ctransformers/actions/workflows/tests.yml) [![build](https://github.com/marella/ctransformers/actions/workflows/build.yml/badge.svg)](https://github.com/marella/ctransformers/actions/workflows/build.yml)
 
 Python bindings for the Transformer models implemented in C/C++ using [GGML](https://github.com/ggerganov/ggml) library.
-Compatibility fork for  
-For now, not compatible with falcon40b because of the multiquery architecture. 
+
+Works with apage43/ggml.For now, not compatible with falcon40b because of the multiquery architecture. 
 
 > Also see [ChatDocs](https://github.com/marella/chatdocs)
 
