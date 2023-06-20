@@ -1,6 +1,0 @@
-# ninja log v5
-0	624	1687300105564395092	CMakeFiles/ctransformers.dir/models/ggml/k_quants.c.o	c2b2aa3bbb3f8385
-0	3013	1687300107952434008	CMakeFiles/ctransformers.dir/models/ggml/ggml.c.o	bbd2e8241724e110
-0	6427	1687300111364489649	CMakeFiles/ctransformers.dir/models/llm.cc.o	1e6e60377077f0d3
-6427	6463	1687300111400490236	lib/libctransformers.so	c0df4c8c50b0d5e1
-6463	6466	0	CMakeFiles/install.util	9bbfb1985194de7f

@@ -748,6 +748,9 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 
+# weird linux build folder
+_skbuild
+
 ### VisualStudio Patch ###
 # Additional files built by Visual Studio
 
