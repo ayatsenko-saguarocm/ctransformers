@@ -30,13 +30,13 @@ Works with apage43/ggml.For now, not compatible with falcon40b because of the mu
 ## Installation
 
 ```sh
-CT_CUBLAS=0 pip install -e .
+CT_CUBLAS=0 pip install .
 ```
 
 For GPU (CUDA) support, set environment variable `CT_CUBLAS=1` and install from source using:
 
 ```sh
-CT_CUBLAS=1 pip install -e .
+CT_CUBLAS=1 pip install .
 ```
 
 </details>
