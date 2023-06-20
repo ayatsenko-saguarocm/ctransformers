@@ -7,6 +7,7 @@
 #include "llms/llama.cc"
 #include "llms/mpt.cc"
 #include "llms/starcoder.cc"
+#include "llms/falcon.cc"
 
 #ifdef __cplusplus
 extern "C" {
@@ -35,7 +36,9 @@ LLM* ctransformers_llm_create(const char* model_path, const char* model_type,
     llm = new mpt_llm;
   } else if (type == "starcoder") {
     llm = new starcoder_llm;
-  }
+  } else if (type == "falcon") {
+    llm = new falcon_llm;
+  } 
 
   if (llm == nullptr) {
     fprintf(stderr, "Model type '%s' is not supported.\n", model_type);

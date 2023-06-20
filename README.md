@@ -1,6 +1,8 @@
 # [C Transformers](https://github.com/marella/ctransformers) [![PyPI](https://img.shields.io/pypi/v/ctransformers)](https://pypi.org/project/ctransformers/) [![tests](https://github.com/marella/ctransformers/actions/workflows/tests.yml/badge.svg)](https://github.com/marella/ctransformers/actions/workflows/tests.yml) [![build](https://github.com/marella/ctransformers/actions/workflows/build.yml/badge.svg)](https://github.com/marella/ctransformers/actions/workflows/build.yml)
 
 Python bindings for the Transformer models implemented in C/C++ using [GGML](https://github.com/ggerganov/ggml) library.
+Compatibility fork for  
+For now, not compatible with falcon40b because of the multiquery architecture. 
 
 > Also see [ChatDocs](https://github.com/marella/chatdocs)
 
@@ -28,30 +30,13 @@ Python bindings for the Transformer models implemented in C/C++ using [GGML](htt
 ## Installation
 
 ```sh
-pip install ctransformers
+CT_CUBLAS=0 pip install -e .
 ```
 
 For GPU (CUDA) support, set environment variable `CT_CUBLAS=1` and install from source using:
 
 ```sh
-CT_CUBLAS=1 pip install ctransformers --no-binary ctransformers
-```
-
-<details>
-<summary><strong>Show commands for Windows</strong></summary><br>
-
-On Windows PowerShell run:
-
-```sh
-$env:CT_CUBLAS=1
-pip install ctransformers --no-binary ctransformers
-```
-
-On Windows Command Prompt run:
-
-```sh
-set CT_CUBLAS=1
-pip install ctransformers --no-binary ctransformers
+CT_CUBLAS=1 pip install -e .
 ```
 
 </details>
@@ -63,7 +48,7 @@ It provides a unified interface for all models:
 ```py
 from ctransformers import AutoModelForCausalLM
 
-llm = AutoModelForCausalLM.from_pretrained('/path/to/ggml-gpt-2.bin', model_type='gpt2')
+llm = AutoModelForCausalLM.from_pretrained('/path/to/ggml-falcon-7b.bin', model_type='falcon')
 
 print(llm('AI is going to'))
 ```
